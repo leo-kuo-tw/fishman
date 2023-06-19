@@ -8,8 +8,7 @@ There have 94 videos in avi format.
 * Camera13: 41.8G, 63 files.
 * Camera14: 20.8G, 31 files.
 
-Demo link: https://drive.google.com/file/d/1frmwECiSUWAY3MisonEurv_bHUMhZF2v/view?usp=sharing   
-(When I clip, it converts from avi to mp4)
+**Due to intellectual property, data can't be published.**
 
 ### Video to image
 Capture a screenshot of the video per minute, you can modify the interval time in video_cut.py
@@ -17,8 +16,8 @@ Capture a screenshot of the video per minute, you can modify the interval time i
 * Camera14: 7.3G, 3665 files (.png), 1920*1080.
 
 ### Data preprocessing
-According to observation, there are few people on the left side of the video, and we want to adjust the input size to match yolo v7.
-In preprocess.py, you can modify the range of cutting size and resize.
+According to observation, there are few people on the left side of the video, and we want to adjust the input size to match yolo v7.  
+In preprocess.py, you can modify the range of cutting size and resize.  
 In img_filter.py, you can choose the type of filter.
 * Crop 30% of the left side of the image, size becomes 1344*1080.
 * Resize all the images to 640*640. (Resizing the image may introduce some noise)
@@ -37,8 +36,6 @@ Standard:
 * Select the most complete person shape in the overlapping crowd.
 * We don't need the body blocked by objects.
 
-Label image: https://universe.roboflow.com/dlfinial/fishman
-
 ## Train
 Train on Google colab, use yolo v7 as pre-train model, weight is yolo v7.  
 batch size: 16, epochs: 100  
@@ -53,7 +50,7 @@ Modify detect.py in yolo v7, and add some conditions:
 * Calculate the total number that satisfies the condition and output it as a txt file. By summing up the numbers, we can determine the total working hours and determine whether the fishermen are overworked.
 
 Detail code: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo#scrollTo=mJlZvWA82VqI  
-Demo: https://drive.google.com/drive/folders/1sgd2cKWsAMRdi6G0jJql1f35Hkht6VBJ 
+Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp=sharing  
 ## Challenge
 * Because it is difficult to accurately identify the faces of fishermen and their attire changes daily, it can't detect if a specific fisherman is working longer hours than others.
   * Try to use skeleton detection model to identify each fisherman.
@@ -78,8 +75,7 @@ Camera的拍攝地點是漁工的作業區，Camera13與14的漁工上班時間�
 * Camera13: 41.8G, 63 files。
 * Camera14: 20.8G, 31 files。
 
-Demo link: https://drive.google.com/file/d/1frmwECiSUWAY3MisonEurv_bHUMhZF2v/view?usp=sharing   
-(剪輯時，換成mp4，原檔為avi)
+**因為智慧財產權，資料無法公開。**
 
 ### Video to image
 影片每一分鐘做一次截圖，可在video_cut.py中修改間隔時間。
@@ -107,8 +103,6 @@ Demo link: https://drive.google.com/file/d/1frmwECiSUWAY3MisonEurv_bHUMhZF2v/vie
 * 重疊人群中，選人型最完整的。
 * 身體被物體遮擋者，不需要。
 
-Label image: https://universe.roboflow.com/dlfinial/fishman
-
 ## Train
 在Google colab做訓練，使用yolo v7作為預模型，權重為yolo v7。  
 batch size: 16, epochs: 100  
@@ -123,7 +117,7 @@ yolo v7: https://github.com/WongKinYiu/yolov7
 * 計算符合條件的總數，並輸出成txt檔，將其加總後，得到總工時，就可知道是否過勞。
 
 詳細程式碼修改: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo#scrollTo=mJlZvWA82VqI  
-Demo: https://drive.google.com/drive/folders/1sgd2cKWsAMRdi6G0jJql1f35Hkht6VBJ 
+Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp=sharing  
 ## Challenge
 * 因為無法清楚辨識影片中漁工的臉部，每天的穿著也不同，無法針對每個人做label，無法檢測是否有特定漁工工時特別長。
   * 可嘗試用骨架辨識模型找出每個漁工。
