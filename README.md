@@ -40,7 +40,6 @@ Standard:
 Train on Google colab, use yolo v7 as pre-train model, weight is yolo v7.  
 batch size: 16, epochs: 100  
 yolo v7: https://github.com/WongKinYiu/yolov7  
-Detail: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo
 
 ## Detect
 Modify detect.py in yolo v7, and add some conditions:
@@ -49,8 +48,7 @@ Modify detect.py in yolo v7, and add some conditions:
 * If the parameter "pred" is empty and more than 15 frames are detected within one second, it indicates the fishermen are working during that second.
 * Calculate the total number that satisfies the condition and output it as a txt file. By summing up the numbers, we can determine the total working hours and determine whether the fishermen are overworked.
 
-Detail code: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo#scrollTo=mJlZvWA82VqI  
-Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp=sharing  
+Detail code: https://colab.research.google.com/drive/1P8j4QBM1N59Byuxv0FPJttVtN7CS7KHT?usp=drive_link  
 ## Challenge
 * Because it is difficult to accurately identify the faces of fishermen and their attire changes daily, it can't detect if a specific fisherman is working longer hours than others.
   * Try to use skeleton detection model to identify each fisherman.
@@ -62,7 +60,7 @@ Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp
 * The performance of YOLO v7 is good, as it can accurately detect the majority of fishermen.
 * Calculate the working hours and check if the fishermen are overworked or not.
 
-Project ppt: https://docs.google.com/presentation/d/1VWvjQUebHvFDKHu8CfgpPxaBvFUQCZtRIwfi2bsqjvQ/edit#slide=id.p
+Project ppt: https://docs.google.com/presentation/d/1MITeXN5LBp1QtxZg3FOwQDmGof3KKNSj/edit?usp=sharing&ouid=102983354699040806655&rtpof=true&sd=true
 ***
 
 # 遠洋漁業的漁工影像中是否過勞
@@ -107,7 +105,6 @@ Camera的拍攝地點是漁工的作業區，Camera13與14的漁工上班時間�
 在Google colab做訓練，使用yolo v7作為預模型，權重為yolo v7。  
 batch size: 16, epochs: 100  
 yolo v7: https://github.com/WongKinYiu/yolov7  
-詳細解說: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo
 
 ## Detect
 修改yolo v7中的detect.py，加入條件:
@@ -116,8 +113,7 @@ yolo v7: https://github.com/WongKinYiu/yolov7
 * 判斷預測參數pred是否為空，且一秒內超過15幀被偵測到，代表這一秒有漁工在工作。
 * 計算符合條件的總數，並輸出成txt檔，將其加總後，得到總工時，就可知道是否過勞。
 
-詳細程式碼修改: https://colab.research.google.com/drive/1RQTdvAgNOlEzOtAo7GgR8EdLnJftg5eo#scrollTo=mJlZvWA82VqI  
-Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp=sharing  
+詳細程式碼修改: https://colab.research.google.com/drive/1P8j4QBM1N59Byuxv0FPJttVtN7CS7KHT?usp=drive_link  
 ## Challenge
 * 因為無法清楚辨識影片中漁工的臉部，每天的穿著也不同，無法針對每個人做label，無法檢測是否有特定漁工工時特別長。
   * 可嘗試用骨架辨識模型找出每個漁工。
@@ -129,4 +125,4 @@ Demo: https://drive.google.com/file/d/1GA9dXR0skNTvnnvzwyg5JuCqqxUjiWLO/view?usp
 * yolo v7表現良好，能找出大部分漁工。
 * 計算工時，檢查是否過勞。
 
-專案簡報: https://docs.google.com/presentation/d/1VWvjQUebHvFDKHu8CfgpPxaBvFUQCZtRIwfi2bsqjvQ/edit#slide=id.p  
+專案簡報: https://docs.google.com/presentation/d/1MITeXN5LBp1QtxZg3FOwQDmGof3KKNSj/edit?usp=sharing&ouid=102983354699040806655&rtpof=true&sd=true
